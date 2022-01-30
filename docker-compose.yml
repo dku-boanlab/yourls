@@ -1,12 +1,12 @@
-version: 3
+version: '3'
 
 services:
   yourls:
     image: yourls
     restart: always
     ports:
-      – 80:80
-      – 443:443
+      - '80:80'
+      - '443:443'
     environment:
       YOURLS_DB_PASS: password
       YOURLS_SITE: http://YOURLS_SITE
